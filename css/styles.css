@@ -345,7 +345,7 @@ img {
 
 .hero-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-6);
 }
 
@@ -381,9 +381,10 @@ img {
   width: 300px;
   height: 300px;
   border-radius: var(--border-radius-full);
-  background-image: url('https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../images/profile.jpg');
+  background-size: 100%;      /* was missing / use this or a smaller cover */
+  background-position: center top; /* move up a bit if you like */
+  background-repeat: no-repeat;  /* avoid tiling */
   box-shadow: 0 10px 30px var(--color-shadow);
 }
 
